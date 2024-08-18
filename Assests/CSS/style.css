@@ -74,6 +74,7 @@ html,body{
 #center-nav>li>a.active{
     border-bottom: 2px solid var(--h1-colour);
     font-weight: 600;
+    transition: 0.5s ease-in-out;
 }
 #center-nav>li>a:hover{
     font-weight: 600;
@@ -286,8 +287,8 @@ canvas{
     transform: rotate(5deg) scale(1.1);
 }
 
-
 /* <------- Main End ---------> */
+
 
 
 
