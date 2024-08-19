@@ -14,6 +14,20 @@
 html,body{
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
+    animation: transactionIn 0.7s ease-in-out;
+}
+
+/* Animation While Loading Another HTML File */
+@keyframes transactionIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 :root{
@@ -560,9 +574,10 @@ canvas{
         width: 250px;
     }
     .container{
-        margin-top: 12%;
+        margin-top: 15%;
     }
     .container .heading{
+        margin-top: 10%;
         margin-bottom: 5px;
     }
 }
