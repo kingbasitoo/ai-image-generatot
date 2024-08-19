@@ -484,7 +484,7 @@ canvas{
         --medium-medium-font : 2.1rem;
         --small-medium-font : 1.4rem;
         --small-font: 1.1rem;
-        --p-font: 1rem
+        --p-font: 1.1rem
     }
     #page>p{
         top: 57%;
@@ -544,6 +544,9 @@ canvas{
 /* <------- Big-Size Phone Screen --------> */
 
 @media screen and (max-width: 650px) {
+    :root{
+        --big-font : 2.8rem;
+    }
     #page>h1{
         width: 75%;
         font-size: var(--medium-font);
