@@ -139,35 +139,36 @@ html,body{
     text-align: center;
     background-color: var(--background-color);
 }
-#page .text-content{
-    position: relative;
-    z-index: 10001;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#page .first{
-    margin-top: 120px;
-}
-#page .text-content h1{
-    text-align: center;
+#page>h1{
     font-size: var(--big-font);
     color: var(--h1-colour);
-    margin-bottom: 10px;
-    width: 50%;
-} 
-#page .text-content p{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1001;
     text-align: center;
-    font-size: var(--p-font);
-    color: var(--p-colour);
-    margin-bottom: 15px;
-    width: 50%;
+    font-weight: 500;
 }
-#page .text-content .generate{
+#page>p{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: var(--p-font);
+    z-index: 1001;
+    text-align: center;
+    font-weight: 400;
+    color: #565656;
+}
+#page>.generate{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: 1001;
     text-align: center;
     padding: 10px 35px;
@@ -182,12 +183,12 @@ html,body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.4s ease;
 }
-#page .text-content img{
+#page>.generate>img{
     width: 24px;
     margin-right: 5px;
     transition: 0.4s ease;
 }
-#page .text-content .generate:hover img{
+#page>.generate:hover >img{
     margin-right: 15px;
 }
 canvas{
@@ -308,6 +309,17 @@ canvas{
         --p-font: 1.1rem;
         --a-font : 0.8rem;
     }
+    #page>h1{
+        width: 65%;
+    }
+    #page>p{
+        top: 58%;
+        width: 55%;
+    }
+    #page>.generate{
+        top: 70%;
+        margin-bottom: 1rem;
+    }
     #nav{
         width: 60vw;
     }
@@ -329,9 +341,15 @@ canvas{
         --small-font: 1.1rem;
         --p-font: 1rem
     }
-    #page .text-content h1,
-    #page .text-content p{
-        width: 65%;
+    #page>p{
+        top: 57%;
+        width: 70%;
+    }
+    #page>.generate{
+        top: 69%;
+    }
+    #page.noButton p{
+        top: 56%;
     }
     #why-choose .row{
         width: 90%;
@@ -366,9 +384,14 @@ canvas{
 /* <------- Big-Size Phone Screen --------> */
 
 @media screen and (max-width: 650px) {
-    #page .text-content h1,
-    #page .text-content p{
+    #page>h1{
+        width: 75%;
+        font-size: var(--medium-font);
+    }
+    #page>p{
+        top: 55%;
         width: 70%;
+        font-size: 14px;
     }
     #heading h1{
         font-size: var(--medium-font);
@@ -426,14 +449,11 @@ canvas{
     #center-nav.active{
         clip-path: circle(344% at 60% 0);
     }
-    #page .text-content h1{
-        font-size: var(--medium-font);
+    #page > h1{
+        width: 90%;
     }
-    #page .text-content h1{
-        width: 75%;
-    }
-    #page .text-content p{
-        width: 85%;
+    #page > p{
+        width: 90%;
     }
     #why-choose .row{
         height: 100%;
