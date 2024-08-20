@@ -2,7 +2,7 @@ class specialHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <header id="nav">
-                <a href="#" class="logo">GenArtLab</a>
+                <a href="#" class="logo">Gen<span>Art</span>Lab</a>
                 <ul id="center-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
