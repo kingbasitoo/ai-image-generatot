@@ -27,10 +27,13 @@
     <div class="container">
         <h3 class="heading">Get In Touch</h3>
         <div class="box">
-            <form action="" class="left">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your E-mail" required>
-                <textarea placeholder="Enter Your Message" required></textarea>
+            <form action="https://api.web3forms.com/submit" method="POST" class="left">
+                
+                <input type="hidden" name="access_key" value="5a7f9c01-b7e7-4674-89e9-f83ad167e5ab">
+                
+                <input type="text" name = "name" placeholder="Enter Your Name" required>
+                <input type="email" name ="email" placeholder="Enter Your E-mail" required>
+                <textarea name = "message" placeholder="Enter Your Message" required></textarea>
                 <button type="submit">Submit</button>
             </form>
             <div class="right">
