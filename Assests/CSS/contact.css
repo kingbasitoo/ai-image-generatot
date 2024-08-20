@@ -97,16 +97,16 @@
 }
 .container .box .right .up .context{
     display: flex;
-    margin-bottom: 7px;
+    margin-bottom: 9px;
     align-items: center;
     word-wrap: break-word;
 }
 .container .box .right .up .context i{
-    font-size: 26px;
+    font-size: 22px;
     margin-right: 20px;
     color: var(--logo-colour);
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: var(--background-color);
     display: flex;
@@ -130,6 +130,7 @@
 .container .box .down iframe{
     width: 100%;
     height: 100%;
+    margin-bottom: 20px;
 }
 /* <------- Contact Us End ---------> */
 
@@ -193,5 +194,16 @@
     }
     .container .box .left{
         width: 100%;
+    }
+    .container .box .right .up{
+        padding: 10px;
+    }
+    .container .box .right .up .context i{
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .container .box .right .up .context span{
+        font-size: 14px;
     }
 }
