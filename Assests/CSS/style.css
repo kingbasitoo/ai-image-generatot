@@ -306,141 +306,6 @@ canvas{
 
 /* <------- Main End ---------> */
 
-/* <------- Contact Us Start ---------> */
-
-.container{
-    position: relative;
-    margin-top: 8%;
-    padding-inline: 10%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-basis: 1;
-    flex-wrap: wrap;
-}
-.container .heading{
-    margin-top: 20px;
-    font-size: var(--small-medium-font);
-    color: var(--logo-colour);
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.container .heading::before{
-    position: absolute;
-    content: "";
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 65px;
-    height: 3px;
-    border-radius: 25px;
-    background-color: var(--p-colour);
-}
-.container .box{
-    width: 100%;
-    padding: 20px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-.container .box .left{
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-}
-.container .box .left input{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    padding: 10px 20px;
-    color: var(--p-colour);
-    border: 1px solid var(--logo-colour);
-    font-size: 15px;
-    outline: none;
-    margin-bottom: 20px;
-    border-radius: 3px;
-}
-.container .box .left textarea{
-    width: 100%;
-    height: 140px;
-    resize: none;
-    padding: 10px 20px;
-    color: var(--p-colour);
-    border: 1px solid var(--logo-colour);
-    font-size: 15px;
-    outline: none;
-    margin-bottom: 20px;
-    border-radius: 3px;
-}
-.container .box .left button{
-    width: 150px;
-    height: 40px;
-    line-height: 40px;
-    cursor: pointer;
-    font-size: var(--p-font);
-    background-color: var(--button-color);
-    color: var(--logo-colour);
-    font-weight: 600;
-    border: none;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: 0.4s ease-in-out;
-}
-.container .box .left button:hover{
-    transform: scale(0.95);
-}
-.container .box .right{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    flex-direction: column;
-    gap: 10px;
-}
-.container .box .right .up{
-    padding-inline: 20px;
-}
-.container .box .right .up .context{
-    display: flex;
-    margin-bottom: 7px;
-    align-items: center;
-}
-.container .box .right .up .context i{
-    font-size: 26px;
-    margin-right: 20px;
-    color: var(--logo-colour);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.4s ease-in-out;
-    cursor: pointer;
-}
-.container .box .right .up .context i:hover{
-    background: none;
-}
-.container .box .right .up .context span{
-    font-size: var(--p-font);
-    color: var(--p-colour);
-}
-.container .box .down{
-    padding: 0;
-    width: 325px;
-    height: 200px;
-}
-.container .box .down iframe{
-    width: 100%;
-    height: 100%;
-}
-/* <------- Contact Us End ---------> */
-
-
 /* <------- Footer End ---------> */
 
 footer{
@@ -536,9 +401,6 @@ footer .rows .cols p:hover{
     #heading h1{
         font-size: 4rem;
     }
-    .container{
-        padding-inline: 20px;
-    }
 }
 
 /* <------- Big Screen --------> */
@@ -590,21 +452,6 @@ footer .rows .cols p:hover{
         top: 0;
         border-radius: 0;
     }
-    .container .box{
-        flex-direction: column;
-    }
-    .container .box .left{
-        width: 100%;
-    }
-    .container .box .right{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 100%;
-    }
-    .container .box .right .down{
-        width: 100%;
-    }
 }
 
 /* <------- Tab Screen --------> */
@@ -643,13 +490,6 @@ footer .rows .cols p:hover{
     #why-choose .row .img-content img{
         margin-top: 15px;
         width: 250px;
-    }
-    .container{
-        margin-top: 15%;
-    }
-    .container .heading{
-        margin-top: 10%;
-        margin-bottom: 5px;
     }
 }
 
@@ -703,12 +543,6 @@ footer .rows .cols p:hover{
     }
     #why-choose .row .text-content p{
         margin-bottom: 10px;
-    }
-    .container{
-        padding: 0;
-    }
-    .container .left{
-        width: auto;
     }
 }
 

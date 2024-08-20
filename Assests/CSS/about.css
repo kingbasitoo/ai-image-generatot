@@ -1,0 +1,126 @@
+
+/* <------- About Us Start ---------> */
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    gap: 80px;
+}
+.upper-section{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+.upper-section .img-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper-section .img-content img{
+    width: 600px;
+}
+.upper-section .text-content{
+    display: flex;
+    flex-direction: column;
+}
+.upper-section .text-content h5{
+    font-size: var(--small-font);
+    color: #12bd1e;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.upper-section .text-content p{
+    font-size: var(--p-font);
+    color: var(--p-colour);
+}
+.lower-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.lower-section h5{
+    font-size: var(--small-font);
+    color: #12bd1e;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.mentor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mentor img,
+.team .member img{
+    width: 300px;
+}
+.mentor h3{
+    font-size: var(--small-font);
+}
+.mentor p{
+    font-size: var(--p-font);
+    color: var(--p-colour);
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 30px;
+}
+.team .member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* <------- About Us Start ---------> */
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .upper-section .img-content img{
+        width: 500px;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .upper-section .img-content img{
+        width: 400px;
+        padding: 0 10px;
+    }
+    .upper-section .text-content p{
+        font-size: 17px;
+    }
+    .team{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 800px) {
+    .upper-section{
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .upper-section .img-content img{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .team{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .upper-section .img-content img{
+        width: 100%;
+    }
+}
