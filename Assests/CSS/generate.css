@@ -181,7 +181,7 @@
         width: 100%;
     }
     .content .right .img-content img{
-        width: 450px;
+        width: 425px;
     }
 }
 
@@ -190,8 +190,12 @@
         width: 300px;
         object-fit: cover;
     }
+    .content{
+        padding: 20px;
+    }
     .content .left .generate-form{
         flex-direction: column;
+        height: 60px;
         box-shadow: none;
         display: flex;
         align-items: flex-end;
@@ -203,7 +207,7 @@
         height: 100%;
         line-height: 45px;
         width: 100%;
-        padding: 10px 17px;
+        padding: 20px 17px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
     .content .left .generate-form .controls .generate-btn{

@@ -61,11 +61,11 @@ html,body{
     border-radius: 20px;
     height: 11vh;
     width: 60vw;
-    background-color: #ffffff54;
+    background-color: #f9f8f8;
     backdrop-filter: blur(10px);
     padding: 0px 30px;
     transition: 0.3s ease;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
 }
 #nav>.logo{
     font-size: var(--small-font);
@@ -82,7 +82,7 @@ html,body{
     margin-left: 30px;
 }
 #center-nav>li>a{
-    color: var(--logo-colour);
+    color: var(--h3-colour);
     font-size: var(--a-font);
     display: flex;
     transition: 0.4s ease;
@@ -547,8 +547,17 @@ footer .rows .cols p:hover{
     }
 }
 
-@media screen and (max-width:355px) {
+@media screen and (max-width:375px) {
+    footer{
+        margin-top: 30px;
+    }
     #page>p{
         top: 57%;
+    }
+    #page>.generate{
+        top: 69%;
+    }
+    footer .rows{
+        gap: 25px;
     }
 }

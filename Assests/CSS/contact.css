@@ -2,7 +2,7 @@
 
 .container{
     position: relative;
-    margin-top: 8%;
+    /* margin-top: 8%; */
     padding-inline: 10%;
     width: 100%;
     display: flex;
@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 .container .heading{
-    margin: 20px 0;
+    margin-top: 120px;
     font-size: var(--small-medium-font);
     color: var(--logo-colour);
     position: relative;
@@ -202,6 +202,7 @@
         width: 35px;
         height: 35px;
         font-size: 15px;
+        margin-right: 5px;
     }
     .container .box .right .up .context span{
         font-size: 14px;
