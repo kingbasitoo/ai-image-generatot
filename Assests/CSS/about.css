@@ -24,7 +24,7 @@
     justify-content: center;
 }
 .upper-section .img-content img{
-    width: 400px;
+    width: 250px;
 }
 .upper-section .text-content{
     display: flex;
@@ -40,33 +40,35 @@
     font-size: var(--p-font);
     color: var(--p-colour);
 }
+.leader,
 .lower-section{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+.leader h5,
 .lower-section h5{
     font-size: var(--small-font);
     color: #12bd1e;
     font-weight: 600;
     margin-bottom: 20px;
 }
-.mentor{
+.leader .mentor{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 45px;
 }
-.mentor img,
+.leader .mentor img,
 .team .member img{
     width: 300px;
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
 }
-.mentor h3{
+.leader .mentor h3{
     font-size: var(--small-font);
 }
-.mentor p{
+.leader .mentor p{
     font-size: var(--p-font);
     color: var(--p-colour);
 }
@@ -88,14 +90,20 @@
 /* Responsive */
 @media screen and (max-width: 1000px) {
     .upper-section .img-content img{
-        width: 500px;
+        width: 300px;
         padding: 0 10px;
     }
 }
 @media screen and (max-width: 880px) {
+    .upper-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
     .upper-section .img-content img{
-        width: 400px;
-        padding: 0 10px;
+        width: 100%;
     }
     .upper-section .text-content p{
         font-size: 17px;
@@ -105,18 +113,6 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
-@media screen and (max-width: 800px) {
-    .upper-section{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-    }
-    .upper-section .img-content img{
-        width: 550px;
-    }
-}
 @media screen and (max-width: 560px) {
     .upper-section{
         padding-inline: 0;
@@ -124,8 +120,5 @@
     .team{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-    }
-    .upper-section .img-content img{
-        width: 100%;
     }
 }
