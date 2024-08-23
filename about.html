@@ -16,6 +16,9 @@
     <!-- Image of Website -->
     <link rel="icon" href="Assests/Img/banner-pic.webp" type="image/icon type">
 
+    <!-- Link To Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Link To CSS -->
     <link rel="stylesheet" href="Assests/CSS/style.css">
 
@@ -38,45 +41,63 @@
             </div>
         </div>
         <div class="leader">
-            <h5>Meet Our Team Members</h5>
+            <h5>Teacher & Instructor</h5>
             <div class="mentor">
                 <img src = "Assests/Img/girl.png" alt="Mentor">
                 <h3>Asima Mandal(Kar)</h3>
-                <p>Mentor</p>
+                <p>Project Mentor</p>
             </div>
         </div>
-        <div class="lower-section">
-            <div class="team">
-                <div class="member">
-                    <img src="Assests/Img/me.png" alt="Developer">
-                    <h3>Rahul Goswami</h3>
-                    <p>Developer</p>
-                </div>
-                <div class="member">
-                    <img src="Assests/Img/girl.png" alt="Designer">
-                    <h3>Shrabani Goswami</h3>
+        <div class="swiper mySwiper">
+            <h5>Team Members</h5>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="Assests/Img/girl.png" alt="Girl">
+                    <h1>Shrabani Goswami</h1>
                     <p>Designer</p>
+                    <button class="connect">Connect</button>
                 </div>
-                <div class="member">
-                    <img src="Assests/Img/girl.png" alt="Member">
-                    <h3>Neeharika Basu</h3>
+
+                <div class="swiper-slide">
+                    <img src="Assests/Img/me.png" alt="Boy">
+                    <h1>Rahul Goswami</h1>
+                    <p>Developer</p>
+                    <button class="connect">Connect</button>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="Assests/Img/me.png" alt="Boy">
+                    <h1>Ritam Kuchlyan</h1>
+                    <p>Animator</p>
+                    <button class="connect">Connect</button>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="Assests/Img/girl.png" alt="Girl">
+                    <h1>Debopriya Adhikary</h1>
                     <p>3d Model Designer</p>
+                    <button class="connect">Connect</button>
                 </div>
-                <div class="member">
-                    <img src="Assests/Img/me.png" alt="Member">
-                    <h3>Ritam Kuchlyan</h3>
-                    <p>Web Developer</p>
-                </div>
-                <div class="member">
-                    <img src="Assests/Img/girl.png" alt="Member">
-                    <h3>Debopriya Adhikary</h3>
+
+                <div class="swiper-slide">
+                    <img src="Assests/Img/girl.png" alt="Girl">
+                    <h1>Neeharika Basu</h1>
                     <p>3d Model Designer</p>
+                    <button class="connect">Connect</button>
                 </div>
+                
             </div>
-        </div>
+            <div class="swiper-pagination"></div>
+          </div>
     </div>
+
+    <!-- Link To Swiper JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Link To Header Management JavaScript -->
     <script src="Assests/JavaScript/HeaderManagement.js"></script>
+
+    <!-- Link To About JavaScript -->
+    <script src="Assests/JavaScript/about.js"></script>
 </body>
 </html>
